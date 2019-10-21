@@ -11,20 +11,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        inSoChinhPhuong();
+        inSoNguyenTo();
     }
 
-    private void inSoChinhPhuong() {
+    private void inSoNguyenTo() {
 
 
-        for (int i = 0; i <= 100; i += 1) {
-            int j = 1;
-            while (j * j <= i) {
-                if (j * j == i) {
-                    Log.d("BBB", i + "");
+        for (int i = 0; i <= 100; i++) {
+            int flag = 0;
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    flag = flag + 1;
                 }
-                j = j + 1;
+
             }
+            if (flag == 2) Log.d("BBB", i + "");
         }
 
     }

@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 //            double number4 = Math.flooLog.d("CCC", number3 + "");r(Math.random() * 6);
 //            Log.d("CCC", number4 + "");
 // 5 tìm ra số lớn nhát so nhỏ nhất   Log.d("CCC", number3 + "");
-        int[] a = {1, 10, 11, 20, 18, 19, 21, 99};//phan khai bao va khoi tao
+        int[] a = {1, 10, 11, 20, 20, 19, 21, 99};//phan khai bao va khoi tao
 //bai tap :
 // 1 : tong gia tri trong mang
 // 2 :tim kiếm giá trị trong mảng +nếu có trả về vị tri
@@ -40,13 +40,24 @@ public class MainActivity extends AppCompatActivity {
         //3 : tim kiếm gia tri o vị tri dau tien + có in vị trí +ko in ra -1;
         //4 : xoa cac phan tu bị trung trong mang
         // [1, 2 ,3 ,3, 4, 5] => [1,2,3,4,5]
-        int tong = 0;
-        for (int value : a) {
-
-            tong = tong + value;
-
+//        int tong = 0;
+////        for (int value : a) {
+////
+////            tong = tong + value;
+////
+////        }
+////        Log.d("BBB", tong + "");
+        //bai tap 2
+        int m = 20;
+        int i = 0;
+        while (i < a.length) {
+            if (a[i] == m) {
+                Log.d("BBB", i + "");
+            }
+            i++;
         }
-        Log.d("BBB", tong + "");
+
+
     }
 
 }

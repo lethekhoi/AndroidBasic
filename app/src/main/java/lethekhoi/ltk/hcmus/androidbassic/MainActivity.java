@@ -33,7 +33,13 @@ public class MainActivity extends AppCompatActivity {
 //            Log.d("CCC", number4 + "");
 // 5 tìm ra số lớn nhát so nhỏ nhất   Log.d("CCC", number3 + "");
         int[] a = {1, 10, 11, 20, 18, 19, 21, 99};//phan khai bao va khoi tao
-
+//bai tap :
+// 1 : tong gia tri trong mang
+// 2 :tim kiếm giá trị trong mảng +nếu có trả về vị tri
+        //                      +nếu ko trả về -1
+        //3 : tim kiếm gia tri o vị tri dau tien + có in vị trí +ko in ra -1;
+        //4 : xoa cac phan tu bị trung trong mang
+        // [1, 2 ,3 ,3, 4, 5] => [1,2,3,4,5]
 //        int max = a[0];
 //        for (int value : a) {
 //
@@ -49,7 +55,21 @@ public class MainActivity extends AppCompatActivity {
 //        }
 //        Log.d("CCC", min + "");
         //6 : sắp xếp
-
+//        int temp = 0;
+//        for (int i = 0; i < a.length; i++) {
+//            if (i < a.length - 1) {
+//                if (a[i] > a[i + 1]) {
+//                    temp = a[i];
+//                    a[i] = a[i + 1];
+//                    a[i + 1] = temp;
+//                }
+//            }
+//            Log.d("BBB", a[i] + "");
+//        }
+        //sắp xếp kí tự theo mã ascii
+//7 Map
+        //+thay doi phan tu trong mang
+        //+tao ra 1 màng mới vói cac chức năng được thay đổi
 
     }
 

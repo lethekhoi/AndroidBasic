@@ -40,37 +40,13 @@ public class MainActivity extends AppCompatActivity {
         //3 : tim kiếm gia tri o vị tri dau tien + có in vị trí +ko in ra -1;
         //4 : xoa cac phan tu bị trung trong mang
         // [1, 2 ,3 ,3, 4, 5] => [1,2,3,4,5]
-//        int max = a[0];
-//        for (int value : a) {
-//
-//            max = Math.max(max, value);
-//        }
-//        Log.d("CCC", max + "");
-//
-//
-//        int min = a[0];
-//        for (int value : a) {
-//
-//            min = Math.min(min, value);
-//        }
-//        Log.d("CCC", min + "");
-        //6 : sắp xếp
-//        int temp = 0;
-//        for (int i = 0; i < a.length; i++) {
-//            if (i < a.length - 1) {
-//                if (a[i] > a[i + 1]) {
-//                    temp = a[i];
-//                    a[i] = a[i + 1];
-//                    a[i + 1] = temp;
-//                }
-//            }
-//            Log.d("BBB", a[i] + "");
-//        }
-        //sắp xếp kí tự theo mã ascii
-//7 Map
-        //+thay doi phan tu trong mang
-        //+tao ra 1 màng mới vói cac chức năng được thay đổi
+        int tong = 0;
+        for (int value : a) {
 
+            tong = tong + value;
+
+        }
+        Log.d("BBB", tong + "");
     }
 
 }

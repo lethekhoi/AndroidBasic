@@ -47,14 +47,19 @@ public class MainActivity extends AppCompatActivity {
 ////
 ////        }
 ////        Log.d("BBB", tong + "");
-        //bai tap 2
+        //bai tap 3
         int m = 20;
         int i = 0;
-        while (i < a.length) {
+        int dem = 0;
+        for (; i < a.length; i++) {
+
             if (a[i] == m) {
                 Log.d("BBB", i + "");
+                dem++;
             }
-            i++;
+        }
+        if (dem == 0) {
+            Log.d("BBB", "-1");
         }
 
 
